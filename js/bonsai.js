@@ -1,6 +1,6 @@
 //based of off cbonsai https://gitlab.com/jallbrit/cbonsai
 (function () {
-  const W = 80, H = 22, LIFE = 80, MULT = 5;
+  const W = 80, H = 26, LIFE = 50, MULT = 7;
   const LEAVES = ['&'];
   const TRUNK = 0, SHOOT_L = 1, SHOOT_R = 2, DYING = 3, DEAD = 4;
 
