@@ -41,6 +41,21 @@
     #bonsai .ld { color: #00aa00; }
     #bonsai .tx { color: #888888; }
 
+    * { cursor: none; }
+
+    #cursor {
+      position: fixed;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba(180, 180, 180, 0.15);
+      border: 1px solid rgba(180, 180, 180, 0.35);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.08s ease;
+      z-index: 9999;
+    }
+
   </style>
 </head>
 <body>
@@ -62,5 +77,13 @@
     <pre id="bonsai"></pre>
   </div>
   <script src="js/bonsai.js"></script>
+  <div id="cursor"></div>
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+  </script>
 </body>
 </html>
