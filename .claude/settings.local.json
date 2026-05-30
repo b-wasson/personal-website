@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.noahzender.com)",
+      "Bash(cmd.exe *)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
