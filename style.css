@@ -31,6 +31,49 @@ hr {
 
 * { cursor: none; }
 
+.nav-dropdown {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+}
+
+.nav-toggle {
+  background: none;
+  border: 1px solid #333;
+  color: #999;
+  padding: 7px 9px;
+  cursor: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.nav-toggle:hover { color: #fff; border-color: #555; }
+
+.nav-menu {
+  display: none;
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  min-width: 140px;
+}
+
+.nav-dropdown.open .nav-menu { display: block; }
+
+.nav-menu li a {
+  display: block;
+  padding: 6px 14px;
+  color: #999;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.nav-menu li a:hover { color: #fff; background: #222; }
+
 #cursor {
   position: fixed;
   width: 16px;
