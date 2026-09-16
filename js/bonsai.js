@@ -1,4 +1,4 @@
-//based of off cbonsai https://gitlab.com/jallbrit/cbonsai
+//based of off cbonsai https://gitlab.com/jallbrit/cbonsai, converted using claude code
 (function () {
   const W = 80, H = 26, LIFE = 50, MULT = 7;
   const LEAVES = ['&'];
